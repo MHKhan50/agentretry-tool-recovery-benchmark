@@ -15,7 +15,7 @@ This is a **synthetic, mechanism-focused benchmark**. It is not a test of a live
 
 A multi-step agent can receive an error even when a requested action has already happened. Blind retries may repeat a non-idempotent action (for example, sending a notification or creating a second ticket). Refusing every uncertain action can avoid duplication but leave tasks unfinished. This benchmark compares four transparent policies under the same generated scenarios.
 
-The topic is motivated by current UK university research interest in evaluating agentic AI in software/data engineering and in long-horizon task execution with error recovery. See `research_context.md`; these sources are context, not endorsements or evidence that this benchmark is novel.
+A literature review (idempotency and exactly-once delivery in distributed systems, LLM tool-use reliability, agent benchmarks) has not been done yet, so no novelty is claimed.
 
 ## Quick start (Mac)
 
@@ -84,8 +84,9 @@ The denominator for duplicate risk is restricted to ambiguous non-idempotent cas
 2. The benchmark uses one critical operation per episode to isolate recovery behaviour; it does not model a complete multi-step agent or realistic tool latency.
 3. Retries are assumed to succeed after a pre-execution failure. Real failures can be persistent.
 4. The simulated ledger is a simplified oracle; real verification may be incomplete, delayed, costly, or wrong.
-5. No statistical confidence intervals are included in this baseline. For a paper, add repeated seeds, uncertainty intervals, sensitivity analyses, and an independently reviewed scenario model.
-6. Do not describe these synthetic results as evidence of production safety or real-LLM performance.
+5. Two results hold by construction: blind retry always duplicates an ambiguous non-idempotent action, and verify-then-act never does because the ledger is a perfect oracle. The informative numbers are completion and escalation.
+6. No statistical confidence intervals are included in this baseline. For a paper, add repeated seeds, uncertainty intervals, sensitivity analyses, and an independently reviewed scenario model.
+7. Do not describe these synthetic results as evidence of production safety or real-LLM performance.
 
 ## Reproducibility and extension
 
@@ -100,4 +101,3 @@ Code: MIT License (`LICENSE`).
 Synthetic dataset and generated outputs: CC BY 4.0 (`dataset_card.md`).
 Citation metadata: `CITATION.cff`.
 
-See `PUBLICATION_CHECKLIST.md` before uploading to GitHub, Kaggle, a website, or a DOI repository.
