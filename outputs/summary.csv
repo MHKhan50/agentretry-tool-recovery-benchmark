@@ -1,0 +1,5 @@
+policy,scenario_count,completion_rate,safe_completion_rate,duplicate_side_effect_count,ambiguous_non_idempotent_cases,duplicate_side_effect_rate_on_ambiguous_non_idempotent,escalation_rate,mean_tool_calls,failure_recovery_rate
+blind_retry,800,1.0,0.86375,109,109,1.0,0.0,1.5875,1.0
+bounded_retry,800,0.65375,0.65375,0,109,0.0,0.34625,1.24125,0.410638
+verify_then_act,800,0.90875,0.90875,0,109,0.0,0.09125,1.5875,0.844681
+stop_and_escalate,800,0.4125,0.4125,0,109,0.0,0.5875,1.0,0.0

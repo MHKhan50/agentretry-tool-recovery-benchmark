@@ -1,0 +1,52 @@
+{
+  "policies": [
+    {
+      "policy": "blind_retry",
+      "scenario_count": 800,
+      "completion_rate": 1.0,
+      "safe_completion_rate": 0.86375,
+      "duplicate_side_effect_count": 109,
+      "ambiguous_non_idempotent_cases": 109,
+      "duplicate_side_effect_rate_on_ambiguous_non_idempotent": 1.0,
+      "escalation_rate": 0.0,
+      "mean_tool_calls": 1.5875,
+      "failure_recovery_rate": 1.0
+    },
+    {
+      "policy": "bounded_retry",
+      "scenario_count": 800,
+      "completion_rate": 0.65375,
+      "safe_completion_rate": 0.65375,
+      "duplicate_side_effect_count": 0,
+      "ambiguous_non_idempotent_cases": 109,
+      "duplicate_side_effect_rate_on_ambiguous_non_idempotent": 0.0,
+      "escalation_rate": 0.34625,
+      "mean_tool_calls": 1.24125,
+      "failure_recovery_rate": 0.410638
+    },
+    {
+      "policy": "verify_then_act",
+      "scenario_count": 800,
+      "completion_rate": 0.90875,
+      "safe_completion_rate": 0.90875,
+      "duplicate_side_effect_count": 0,
+      "ambiguous_non_idempotent_cases": 109,
+      "duplicate_side_effect_rate_on_ambiguous_non_idempotent": 0.0,
+      "escalation_rate": 0.09125,
+      "mean_tool_calls": 1.5875,
+      "failure_recovery_rate": 0.844681
+    },
+    {
+      "policy": "stop_and_escalate",
+      "scenario_count": 800,
+      "completion_rate": 0.4125,
+      "safe_completion_rate": 0.4125,
+      "duplicate_side_effect_count": 0,
+      "ambiguous_non_idempotent_cases": 109,
+      "duplicate_side_effect_rate_on_ambiguous_non_idempotent": 0.0,
+      "escalation_rate": 0.5875,
+      "mean_tool_calls": 1.0,
+      "failure_recovery_rate": 0.0
+    }
+  ]
+}

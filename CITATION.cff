@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use this software or its synthetic dataset, please cite it as below."
+title: "AgentRetry: A Synthetic Benchmark for Recovering from Ambiguous Tool Outcomes"
+authors:
+  - family-names: Hussain
+    given-names: Muzammal
+version: 0.1.0
+date-released: 2026-10-29
+type: software
+license: MIT
