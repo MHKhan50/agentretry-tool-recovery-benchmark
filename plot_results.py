@@ -11,7 +11,7 @@ def plot_results(summary_csv: Path, output_svg: Path) -> None:
     width, height = 920, 540
     left, top, plot_w, plot_h = 230, 100, 600, 330
     bar_h, gap = 22, 18
-    colors = {"completion_rate": "#3B82F6", "duplicate_side_effect_rate_on_ambiguous_non_idempotent": "#DC2626"}
+    colors = {"completion_rate": "#1F4E9C", "duplicate_side_effect_rate_on_ambiguous_non_idempotent": "#C8102E"}
     svg = [
         '<svg xmlns="http://www.w3.org/2000/svg" width="%d" height="%d" viewBox="0 0 %d %d">' % (width, height, width, height),
         '<rect width="100%" height="100%" fill="white"/>',
