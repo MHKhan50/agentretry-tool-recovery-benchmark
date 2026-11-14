@@ -1,5 +1,7 @@
 # AgentRetry: A Synthetic Benchmark for Recovering from Ambiguous Tool Outcomes
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24228676.svg)](https://doi.org/10.5281/zenodo.24228676)
+
 **Version:** 0.1.0
 **Author:** Muzammal Hussain
 **Date:** 29 October 2026
